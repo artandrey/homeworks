@@ -78,7 +78,7 @@ ul {
 .product-list__element {
     width: 255px;
     height: 350px;
-    background-image: url(/img/product1.png);
+    background-color: #e9f0fd;
 }
 
 .product-list__element:hover .product-title__box {
