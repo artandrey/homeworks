@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+ul {
+    list-style: none;
+}
+.nav-list {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    width: 480px;
+}
+.site-nav {
+    justify-content: flex-end;
+    align-self: center;
+}
+.nav-link{
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 11px;
+    color: #0f0101;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+        color: #1abc9c;
+}
+/*-----------MAIN*/
+main {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9f0fd;
+}
+/*---------------SCETION 1*/
+.paris-tours__img {
+    width: 100%;
+    height: 600px;
+    background-image: url(./img/slide4.png);
+    background-size: cover;
+}
+.dark-background {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #00000098;
+}
+.title-box {
+    display: block;
+    width: 1110px;
+    height: max-content;
+    position: absolute;
+    top: 215px;
+    left: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.main-title__box {
+    width: 760px;
+    height: max-content;
+    margin: 0 auto;
+}
+.main-title {
+    font-size: 60px;
+    letter-spacing: -1px;
+    line-height: 82px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+.title-info {
+    margin-top: 10px;
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+.title-btn {
+    width: 100px;
+    height: 100px;
+    background-color: #1abc9c;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    opacity: 0.6;
+}
+.btn-left {
+    left: 0;
+}
+.btn-right {
+    right: 0;
+}
+.btn-symbol {
+    color: wheat;
+    font-size: 50px;   
+    text-align: center; 
+    padding-top: 20px;
+}
+.btn-symbol__left
+{
+    padding-right: 20px ;
+}
+.btn-symbol__right 
+{
+    padding-left: 20px;
+}
+.title-btn:hover {
+    opacity: 1;
+}
+/*----------------------------SECTION 2*/
+.new-collection {
+    background-color: #e9f0fd;
+    width: 100%;
+    height: 680px;
+}
+.new-collection__box {
+    display: block;
+    width: 1110px;
+    height: 100;
+}
+.main-header {
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #515151;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 100px;
+}
+.main-header::after {
+    display: block;
+    content: "";
+    width: 170px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.item_box {
+    width: 1110px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.item-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item-list__element {
+    width: 255px;
+    height: 322px;
+    background-color: #ffffff;
+    background-position: center;
+}
+.item-text__box {
+    width: 100%;
+    height: 40px;
+    background-color: #323232;
+    position: relative;
+    top: -40px;
+    overflow: hidden;
+}
+.product-title {
+    position: relative;
+    left: 15px;
+    top: 5px;
+    display: inline;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 900;
+    text-align: left;
+}
+.price-text {
+    padding-top: 5px;
+    background-color: #8c8c8c;
+    width: 50px;
+    height: 40px;
+    right: 0;
+    position: absolute;
+    display: inline;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 900;
+    text-align: center;
+    top: 0;
+}
+.item-control {
+    width: 255px;
+    height: 322px;
+    position: relative;
+    top: 0;
+    opacity: 0; /* Здесь надо поменять на ноль!!!*/
+    transition: .3s;
+}
+.control-box {
+    width: 100%;
+    height: 282px;
+    background-color: #ffffff86;
+}
+.btn-box {
+    margin: 10px;
+    width: 235px;
+    height: 274px;
+    background-color: #00000083;
+}
+.btn-block {
+    width: 165px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+}
+.control-btn {
+    color: white;
+    background-color: transparent;
+    border: solid white 2px;
+    width: 50px;
+    height: 50px;
+}
+.control-btn:hover {
+    background-color: #1abc9c;
+}
+/*----------------HOVERS---------------------------*/
+.item-list__element:hover > .item-text__box {
+    background-color: #1abc9c;
+}
+.item-list__element:hover  .price-text{
+    background-color: #7fd9c7;
+}
+.item-list__element:hover > .item-control {
+    opacity: 1;
+}
+/*--------------------------------------------------*/
+.btn-1 {
+    background-image: url(./img/heart.svg.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.btn-2{
+    background-image: url(./img/line.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.btn-3{
+    background-image: url(./img/clock.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.btn-4 {
+    width: 161px;
+    height: 50px;
+    background-image: url(./img/cart.png);
+    background-position: 10px ;
+    background-color: #323232;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    padding-left: 30px ;
+}
+
+.footer {
+    width: 100%;
+    height: 90px;
+    background-color: #323232;
+}
+.footer-text__white {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #fefefe;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+}
+.footer-text__cyan {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #46bfa9;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+}
+.footer-text__box {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
