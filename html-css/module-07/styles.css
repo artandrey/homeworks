@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    src: url(./fonts/WisdomScriptAJ.woff);
+    width: 400px;
+    font-family: 'WisdomScriptAJ';
+    font-style: normal;
+}
+@font-face {
+    src: url(./fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url('droidserifbold.woff2') format('woff2'), url('droidserifbold.woff') format('woff'), url('droidserifbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.menu-box {
+    width: 960px;
+    height: max-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.logo-link {
+    font-family: 'WisdomScriptAJ';
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 41px;
+    color: #fed136;
+}
+.site-nav {
+    display: inline-block;
+}
+.nav-list {
+    width: 485px;
+    height: max-content;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nav-element {
+}
+.nav-link {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}
+.nav-link:hover {
+    color: #fed136;
+}
+
+.main-header {
+    margin-top: 125px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 1000;
+    text-align: center;
+}
+.moto-text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #777777;
+    font-family: "Droid Serif";
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+.info-box {
+    width: 940px;
+    height: 377px;
+    margin: 0 auto;
+}
+.info-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+.info-list__element {
+    width: 300px;
+    height: 200px;
+}
+.info-img {
+    margin: 0 auto;
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+.info-name {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 18px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.info-text {
+    margin-top: 25px;
+    width: 280px;
+    height: 58px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    text-align: center;
+}
+.dark-section {
+    background-color: #222222;
+    background-image: url(./img/Map\ Image.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    padding-top: 110px;
+}
+.main-header-2 {
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    font-family: "Montserrat";
+    font-weight: 1000;
+    text-align: center;
+    color: #ffffff; 
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-label {
+    width: 940px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.input {
+    padding-left: 15px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #bbbbbb;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border-radius: 3%;
+}
+.input-type-1 {
+    width: 440px;
+    height: 55px;
+}
+.input-type-2 {
+    width: 440px;
+    height: 200px;
+}
+.input-btn {
+    width: 240px;
+    height: 65px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 3px;
+    border: transparent;
+    background-color: #fed136;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+}
