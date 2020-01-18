@@ -79,6 +79,7 @@
     letter-spacing: 1px;
 }
 .h1 {
+    width: 80%;
     padding-top: 30px;
     color: #ffffff;
     font-family: Montserrat, sans-serif;
@@ -244,7 +245,7 @@
     }
 }
 @media screen and (min-width:960px)and (max-width:1200px) {
-    /*----------NOTEBOOK----------------------------*/
+    /*----------NOTEBOOK----------------*/
     .box {
         max-width: 1440px;
         width: auto;
@@ -278,6 +279,12 @@
     }
     .people-list {
         width: 63%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 32px;
+    }
+    .people-list {
+        width: 63%;
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 32px;
@@ -287,19 +294,6 @@
         width: 45%;
         height: 255px;
 
-    }
-    .see-other__btn {
-        margin-top: 40px;
-        margin-bottom: 79px;
-    }
-    .people-1 {
-        order: -1;
-    }
-    .people-2 {
-        order: 1;
-    }
-    .people-4 {
-        order: 3;
     }
 }
 
@@ -338,7 +332,7 @@
         margin-top: 30px;
     }
     .people-list {
-        width: 63%;
+        width: 900px;
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 32px;
