@@ -3,7 +3,7 @@
     padding: 0;
 }
 .box {
-    width: 320px;
+    width: 100%px;
 }
 .header {
     width: 100%;
@@ -207,10 +207,12 @@
     font-weight: 700;
     margin-bottom: 70px;
 }
-@media screen and (min-width:320px) and (max-width:768px) {
+@media screen and (min-width:768px) and (max-width:960px) { 
+    
+    /* ----------------TABLET---------------*/
+
     .box {
-        max-width: 768px;
-        width: auto;
+        width: 100%;
     }
     .bg-img {
         background-position: center;
@@ -222,6 +224,7 @@
     }
     .h1 {
         font-size: 52px;
+        width: 477px;
     }
     .moto-text {
         font-size: 24px;
@@ -240,8 +243,69 @@
 
     }
 }
+@media screen and (min-width:960px)and (max-width:1200px) {
+    /*----------NOTEBOOK----------------------------*/
+    .box {
+        max-width: 1440px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .header {
+        height: 700px;
+    }
+    .bg-img {
+        background-position: center;
+        background-size: cover;
+    }
+    .login-list {
+        width: 89%;
+        height: max-content;
+        flex-direction: row-reverse;
+        padding-top: 40px;
+    }
+    .h1 {
+        width: 548px;
+        font-size: 52px;
+        padding-top: 160px;
+    }
+    .join-btn {
+        margin-top: 35px;
+    }
+    .moto-text {
+        font-size: 24px;
+        width: auto;
+        margin-top: 30px;
+    }
+    .people-list {
+        width: 63%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        height: 564px;
+    }
+    .people-list__element {
+        width: 45%;
+        height: 255px;
 
-@media screen and (min-width:769px) {
+    }
+    .see-other__btn {
+        margin-top: 40px;
+        margin-bottom: 79px;
+    }
+    .people-1 {
+        order: -1;
+    }
+    .people-2 {
+        order: 1;
+    }
+    .people-4 {
+        order: 3;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    /*------------DESKTOP/NOTEBOOK------------------------*/
     .box {
         max-width: 1440px;
         width: auto;
@@ -297,3 +361,13 @@
         order: 3;
     }
 }
+
+
+
+
+
+
+
+
+
+/* НЕ ЗАБУДЬ ПОМЕНЯТЬ ТЕКСТ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
