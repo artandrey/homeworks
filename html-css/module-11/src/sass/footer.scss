@@ -1,0 +1,51 @@
+footer {
+    border-top: solid #999999 1px;
+    height: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__licence-text {
+    font-size: 14px;
+    color: $main-text-color;
+    font-family: "Montserrat";
+    font-weight: 400;
+  }
+  .footer__licence-text__red-licence__text {
+    color: #f38181;
+  }
+  .footer__footer-form__email {
+    padding-left: 5px;
+    width: 230px;
+    height: 38px;
+    background-color: $link-color;
+    border: 1px solid #e7e7e7;
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: $font-roboto;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .footer__footer-form__submit-btn {
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    font-size: 14px;
+    color: $link-color;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    border: transparent;
+  }
+  .footer__footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
