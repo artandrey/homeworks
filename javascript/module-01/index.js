@@ -35,14 +35,14 @@
 // if (userPassword === null) {
 //     message = 'Отменено пользователем!';
 // }
-// else {
+// else 
 //     if (userPassword == ADMIN_PASSWORD) {
 //         message = 'Добро пожаловать!';
 //     }
 //     else {
 //         message = 'Доступ запрещен, неверный пароль!';
 //     }
-// }
+// 
 // alert(message);
 
 
@@ -63,7 +63,7 @@
 // if (countOfDroid === null) {
 //     message = 'Отменено пользователем!';
 // }
-// else {
+// else 
 //     totalPrice = countOfDroid * pricePerDroid;
 //     if (totalPrice > credits) {
 //       message = 'Недостаточно средств на счету!';
@@ -72,7 +72,7 @@
 //       creditsLeft = credits - totalPrice;
 //       message = `Вы купили ${countOfDroid} дроидов, на счету осталось ${creditsLeft} кредитов.`
 //   }
-// }
+// 
 // alert(message);
 
 
