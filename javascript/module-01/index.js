@@ -35,14 +35,12 @@
 // if (userPassword === null) {
 //     message = 'Отменено пользователем!';
 // }
-// else {
-//     if (userPassword == ADMIN_PASSWORD) {
+// else if (userPassword == ADMIN_PASSWORD) {
 //         message = 'Добро пожаловать!';
 //     }
 //     else {
 //         message = 'Доступ запрещен, неверный пароль!';
 //     }
-// }
 // alert(message);
 
 
@@ -60,18 +58,18 @@
 
 
 // countOfDroid = prompt("Сколько дроидов желаете приобрести?");
+// totalPrice = countOfDroid * pricePerDroid;
 // if (countOfDroid === null) {
 //     message = 'Отменено пользователем!';
 // }
-// else {
-//     totalPrice = countOfDroid * pricePerDroid;
+// else 
 //     if (totalPrice > credits) {
 //       message = 'Недостаточно средств на счету!';
 //   }
 //   else {
 //       creditsLeft = credits - totalPrice;
 //       message = `Вы купили ${countOfDroid} дроидов, на счету осталось ${creditsLeft} кредитов.`
-//   }
+  
 // }
 // alert(message);
 
@@ -82,60 +80,48 @@
 // let country = prompt("Введите страну").toUpperCase();
 // let price;
 // let message;
-// let checkAbility;
 
 // switch (country) {
 //     case ("КИТАЙ"): {
 //         price = 100;
-//         checkAbility = true;
 //         break;
 //     }
 //     case ("ЧИЛИ"): {
 //         price = 250;
-//         checkAbility = true;
 //         break;
 //     }
 //     case ("АВСТРАЛИЯ"): {
 //         price = 170;
-//         checkAbility = true;
 //         break;
 //     }
 //     case ("ИНДИЯ"): {
 //         price = 80;
-//         checkAbility = true;
 //         break;
 //     }
 //     case ("ЯМАЙКА"): {
 //         price = 120;
-//         checkAbility = true;
 //         break;
 //     }
 //     default: {
 //         message = 'В вашей стране доставка не доступна';
 //     }
 // }
-// if (checkAbility) {message = `Доставка в ${country} будет стоить ${price} кредитов`;}
+// if (price) {message = `Доставка в ${country} будет стоить ${price} кредитов`;}
 // alert(message);
 
 // ------------------------------------------------------------TASK-6--------------------------------
 
 
-// let input;
 // let total = 0;
-// let invalidNumber;
-// for(; ;) {
-//     input = prompt('Введите число:');
-//     if (input == null) {
-//         break;
-//     }
-//     invalidNumber = Number(input);
-//         if (Number.isNaN(invalidNumber)) {
-//             alert('Было введено не число, попробуйте еще раз');
-//         }
-//         else {
-//             input = parseInt(input);
-//             total = total + input;
-//         }
+// let userNumber;
 
+// while (userNumber !== null) {
+//   userNumber = prompt("Введите число:");
+//   if (Number.isNaN(+userNumber)) {
+//     alert('Было введено не число, попробуйте еще раз');
+//   }
+//   else {
+//   total = total + +userNumber;
+//   }
 // }
 // alert(`Общая сумма чисел равна ${total}`);
