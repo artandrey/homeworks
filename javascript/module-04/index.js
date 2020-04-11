@@ -36,18 +36,19 @@
 //     items: ['Knife', 'Gas mask'],
 //     add(itemName) {
 //       console.log(`Adding ${itemName} to inventory`);
-//       inventory.items.push(itemName);
+  
+//       this.items.push(itemName);
 //     },
 //     remove(itemName) {
 //       console.log(`Removing ${itemName} from inventory`);
   
-//       inventory.items = inventory.items.filter(item => item !== itemName);
+//       this.items = this.items.filter(item => item !== itemName);
 //     },
 //   };
   
 //   const invokeInventoryAction = function(itemName, action) {
 //     console.log(`Invoking action on ${itemName}`);
-//     action(itemName);
+//     action.call(inventory, itemName);
 //   };
   
 //   invokeInventoryAction('Medkit', inventory.add);
@@ -61,3 +62,46 @@
 //   // Removing Gas mask from inventory
   
 //   console.log(inventory.items); // ['Knife', 'Medkit']
+
+//--------------------------------------------------------------------
+
+// const createCounter = function() {
+//     /*
+//      * Локальная переменная privateValue доступна только в замыкании.
+//      * Получить к ней доступ во внешнем коде невозможно.
+//      */
+//     let privateValue = 0;
+  
+//     const increment = function() {
+//       privateValue += 1;
+//       console.log(privateValue);
+//     };
+//     const decrement = function() {
+//         privateValue -=1;
+//         console.log(privateValue);
+//     }
+  
+//     return {
+//       increment, decrement
+//     };
+//   };
+  
+//   const counterA = createCounter();
+//   counterA.increment(); // 1
+//   counterA.increment(); // 2
+
+//   const counterB = createCounter();
+//   counterB.increment(); // 1
+//   counterB.increment(); // 2
+//   counterB.increment(); // 3
+
+
+//   const greet = function() {
+//     return `Wellcome to ${this.name} hotel!`;
+//   };
+  
+//   const hotel = { name: 'Resort Hotel' };
+
+//   console.log(greet.call(hotel));
+//   console.log(greet.apply(hotel))
+  
