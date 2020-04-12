@@ -58,7 +58,7 @@
 //  const createEl = function(array) {
 //     let elemnts = new String();
 //     for (const value of array) {
-//       elemnts+= `<li class = "gallery-elem"><img src = "${value.url}" alt = "${value.alt}"></img></li>`
+//       elemnts+= `<li class = "gallery-elem"><img src = "${value.url}" alt = "${value.alt}"></li>`
 //     }
 //     return elemnts;
 // }
@@ -135,57 +135,57 @@
 
 
 
-// let box = document.querySelector('#controls');
+let box = document.querySelector('#controls');
 
-// let boxes = document.querySelector('#boxes')
+let boxes = document.querySelector('#boxes')
 
-// let input = document.querySelector('input');
+let input = document.querySelector('input');
 
-// let btnCollection = document.querySelectorAll('button')
+let btnCollection = document.querySelectorAll('button')
 
-// console.log(box, input, btnCollection)
-
-
+console.log(box, input, btnCollection)
 
 
-// const mathRandom = function(max) {
-//     return Math.floor(Math.random() * Math.floor(max+1));
-// }
-
-// const randomRGB = function() {
-//     return `rgb(${mathRandom(255)}, ${mathRandom(255)}, ${mathRandom(255)})`
-// }
-
-// const createBoxes = function(amount) {
-//     let width = 30;
-//     let height = 30;
-//     for (let index = 0; index < amount; index++) {
-//         let div = document.createElement('div');
-//         div.style.width = width+'px';
-//         div.style.height = height+'px';
-//         div.style.backgroundColor = randomRGB();
-//         console.log(randomRGB())
-//         boxes.append(div)
-//         width += 10;
-//         height += 10;
-//         console.log(width, height)
-//     }
-// }
-
-// const destroyBoxes = function() {
-//     let elements = boxes.querySelectorAll('div')
-//     for (const el of elements) {
-//         boxes.removeChild(el)
-//     }
-
-// }
 
 
+const mathRandom = function(max) {
+    return Math.floor(Math.random() * Math.floor(max+1));
+}
+
+const randomRGB = function() {
+    return `rgb(${mathRandom(255)}, ${mathRandom(255)}, ${mathRandom(255)})`
+}
+
+const createBoxes = function(amount) {
+    let width = 30;
+    let height = 30;
+    for (let index = 0; index < amount; index++) {
+        let div = document.createElement('div');
+        div.style.width = width+'px';
+        div.style.height = height+'px';
+        div.style.backgroundColor = randomRGB();
+        console.log(randomRGB())
+        boxes.append(div)
+        width += 10;
+        height += 10;
+        console.log(width, height)
+    }
+}
+
+const destroyBoxes = function() {
+    let elements = boxes.querySelectorAll('div')
+    for (const el of elements) {
+        boxes.removeChild(el)
+    }
+
+}
 
 
 
 
 
-// btnCollection[0].addEventListener('click', () => createBoxes(input.value));
 
-// btnCollection[1].addEventListener('click', () => destroyBoxes());
+
+btnCollection[0].addEventListener('click', () => createBoxes(input.value));
+
+btnCollection[1].addEventListener('click', () => destroyBoxes());
