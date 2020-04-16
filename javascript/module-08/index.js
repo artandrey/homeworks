@@ -74,28 +74,28 @@ let lightboxOverlay = lightBox.querySelector(".lightbox__overlay");
 
 let itemsHTML = "";
 images.forEach((el) => {
-  itemsHTML += `
+    itemsHTML += `
     <li class="gallery__item">
-  <!--<a
-    class="gallery__link"
-    href="${el.original}"
-  > -->
-    <img
-      class="gallery__image"
+  <a
+  class="gallery__link"
+  href="${el.original}"
+  >
+  <img
+  class="gallery__image"
       src="${el.preview}"
       data-source="${el.original}"
       alt="${el.description}"
       data-index="${imgIndex++}"
     />
-  </a>
-</li>
+    </a>
+    </li>
     `;
 });
+
 let maxIndex = --imgIndex;
 imgIndex = 0;
 
 galleryList.insertAdjacentHTML("afterbegin", itemsHTML);
-
 galleryList.addEventListener("click", () => {
   const target = event.target;
   imgIndex = +target.getAttribute("data-index");
@@ -104,6 +104,7 @@ galleryList.addEventListener("click", () => {
   lightBoxImg.setAttribute("src", largeImgUrl);
 
   lightBox.classList.add("is-open");
+  event.preventDefault()
 });
 
 const close = function () {
