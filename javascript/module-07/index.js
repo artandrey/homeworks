@@ -168,3 +168,36 @@
 // btnCollection[0].addEventListener("click", () => createBoxes(input.value));
 
 // btnCollection[1].addEventListener("click", () => destroyBoxes());
+
+
+
+// let input = document.querySelector('input');
+
+// let renderBtn = document.querySelector('.render');
+
+// let destroyBtn = document.querySelector('.destroy');
+// let box = document.querySelector('#boxes');
+
+// console.log(input, renderBtn, destroyBtn, box);
+
+// const createBoxes = function(amount) {
+//     let width = 30;
+//     let height = 30;
+//     for (let i = 0; i < amount; i++) {
+//         let div = document.createElement('div');
+//         box.append(div);
+//         div.style.width = width + 'px';
+//         div.style.height = height + 'px';
+//         div.style.backgroundColor = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`
+//         width += 10;
+//         height += 10;
+//     };
+// };
+
+// const destroy = function () {
+//     box.innerHTML = '';
+//     input.value = 0;
+// }
+
+// renderBtn.addEventListener('click', () => createBoxes(input.value));
+// destroyBtn.addEventListener('click', destroy);
