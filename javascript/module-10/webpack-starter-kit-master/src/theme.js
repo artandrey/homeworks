@@ -12,12 +12,12 @@ let input = document.querySelector('.switch__input');
 const setLight = function () {
     body.classList.add(Theme.LIGHT);
     body.classList.remove(Theme.DARK);
-}
+};
 
 const setDark = function () {
     body.classList.remove(Theme.LIGHT);
     body.classList.add(Theme.DARK);
-}
+};
 const theme = localStorage.getItem('theme');
 console.log(theme);
 if (theme === 'light') input.checked = true;
