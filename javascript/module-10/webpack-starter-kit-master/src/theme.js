@@ -19,27 +19,27 @@ const setDark = function () {
     body.classList.add(Theme.DARK);
 }
 const theme = localStorage.getItem('theme');
-console.log(theme)
+console.log(theme);
 if (theme === 'light') input.checked = true;
 else if (theme === 'dark') input.checked = false;
 else input.checked = true;
 
-if (input.checked) setDark()
-else setLight()
+if (input.checked) setDark();
+else setLight();
 
 
 
   input.addEventListener('change', () => {
     if (input.checked) {
-        setDark()
+        setDark();
         localStorage.setItem('theme', 'dark');
-        console.log('dark')
+        console.log('dark');
     }
     else {
-        setLight()
+        setLight();
         localStorage.setItem('theme', 'ligth');
-        console.log('ligth')
+        console.log('ligth');
     }
-    console.log(input.checked)
+    console.log(input.checked);
   });
 
