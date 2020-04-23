@@ -24,21 +24,21 @@ if (theme === 'light') input.checked = true;
 else if (theme === 'dark') input.checked = false;
 else input.checked = true;
 
-if (input.checked) setLight()
-else setDark()
+if (input.checked) setDark()
+else setLight()
 
 
 
   input.addEventListener('change', () => {
     if (input.checked) {
-        setLight()
-        localStorage.setItem('theme', 'ligth');
-        console.log('ligth')
-    }
-    else {
         setDark()
         localStorage.setItem('theme', 'dark');
         console.log('dark')
+    }
+    else {
+        setLight()
+        localStorage.setItem('theme', 'ligth');
+        console.log('ligth')
     }
     console.log(input.checked)
   });
