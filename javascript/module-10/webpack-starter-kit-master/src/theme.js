@@ -20,9 +20,9 @@ const setDark = function () {
 };
 const theme = localStorage.getItem('theme');
 console.log(theme);
-if (theme === 'light') input.checked = true;
-else if (theme === 'dark') input.checked = false;
-else input.checked = true;
+if (theme === 'light') input.checked = false
+else if (theme === 'dark') input.checked = true
+else input.checked = false
 
 if (input.checked) setDark();
 else setLight();
@@ -33,12 +33,10 @@ else setLight();
     if (input.checked) {
         setDark();
         localStorage.setItem('theme', 'dark');
-        console.log('dark');
     }
     else {
         setLight();
-        localStorage.setItem('theme', 'ligth');
-        console.log('ligth');
+        localStorage.setItem('theme', 'light');
     }
     console.log(input.checked);
   });
