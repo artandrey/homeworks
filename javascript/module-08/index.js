@@ -76,21 +76,13 @@ let lightboxOverlay = lightBox.querySelector(".lightbox__overlay");
 let itemsHTML = "";
 images.forEach((el) => {
     itemsHTML += `
-    <li class="gallery__item">
-  <a
-  class="gallery__link"
-  href="${el.original}"
-  >
-  <img
-  class="gallery__image"
+    <li class="gallery__item"><a class="gallery__link" href="${el.original}">
+  <img class="gallery__image"
       src="${el.preview}"
       data-source="${el.original}"
       alt="${el.description}"
       data-index="${imgIndex++}"
-    />
-    </a>
-    </li>
-    `;
+    /></a></li>`;
 });
 
 let maxIndex = --imgIndex;

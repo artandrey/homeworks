@@ -1,4 +1,4 @@
-// import './styles.css';
+import './styles.css';
 
 'use strict';
 
@@ -132,11 +132,6 @@ const createTemplate = function(){
     for (const el of jsonData) {
         markup = template(el)
         ul.innerHTML += markup;
-    }
-    let listOfLists = document.querySelectorAll('.tag-list');
-    const listGenerator = function(index) {
-        let markup = jsonData[index].ingredients.reduce((acc, el) => acc += `<li class="tag-list__item">${el}</li>`, '');
-        listOfLists[index].innerHTML = markup;
     }
     for (let i = 0; i < jsonData.length; i++) {
         listGenerator(i)
