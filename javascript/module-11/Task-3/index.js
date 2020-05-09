@@ -37,7 +37,7 @@ const CountdownTimer = function (selector, date) {
   spanArray[2].textContent = mins;
   spanArray[3].textContent = secs;
     }, 1000);
-}  
+};  
 
 
-const firstTimer = new CountdownTimer('#timer-1', 'May 13 2020');
+const firstTimer = new CountdownTimer('#timer-1', 'Jan 1 2021');
