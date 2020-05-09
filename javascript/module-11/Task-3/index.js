@@ -1,3 +1,5 @@
+'use strict';
+
 const CountdownTimer = function (selector, date) {
     this.targetDate = new Date(date);
     this.selector = selector;
