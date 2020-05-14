@@ -112,13 +112,15 @@ window.addEventListener("keydown", () => {
   if (event.keyCode === 27) close();
   else if (event.keyCode === 37) {
     imgIndex--;
-    if (imgIndex === 0) imgIndex = maxIndex;
+    if (imgIndex === -1) imgIndex = maxIndex;
     lightBoxImg.setAttribute("src", images[imgIndex].original);
   } else if (event.keyCode === 39) {
     imgIndex++;
     if (imgIndex > maxIndex) imgIndex = 0;
     lightBoxImg.setAttribute("src", images[imgIndex].original);
   }
+  console.log(imgIndex)
+  console.log(images)
 });
 
 lightboxOverlay.addEventListener("click", close);
