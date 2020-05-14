@@ -72,7 +72,7 @@ let lightBoxImg = document.querySelector(".lightbox__image");
 let lightBox = document.querySelector(".lightbox");
 let closeBtn = lightBox.querySelector("button");
 let lightboxOverlay = lightBox.querySelector(".lightbox__overlay");
-
+let lightboxContent = document.querySelector('.lightbox__content');
 let itemsHTML = "";
 images.forEach((el) => {
     itemsHTML += `
@@ -123,4 +123,4 @@ window.addEventListener("keydown", () => {
   console.log(images)
 });
 
-lightboxOverlay.addEventListener("click", close);
+lightboxContent.addEventListener('click', close)
