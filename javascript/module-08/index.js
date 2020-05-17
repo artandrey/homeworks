@@ -71,10 +71,10 @@ let galleryList = document.querySelector(".gallery");
 let lightBoxImg = document.querySelector(".lightbox__image");
 let lightBox = document.querySelector(".lightbox");
 let closeBtn = lightBox.querySelector("button");
-let lightboxOverlay = lightBox.querySelector(".lightbox__overlay");
 let lightboxContent = document.querySelector('.lightbox__content');
 let itemsHTML = "";
 images.forEach((el) => {
+
     itemsHTML += `
     <li class="gallery__item"><a class="gallery__link" href="${el.original}">
   <img class="gallery__image"
