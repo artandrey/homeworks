@@ -8,12 +8,16 @@ const alertText = document.querySelector('h3');
 let requestTimeout;
 
 input.addEventListener('input', ()=> {
+    const value = input.value.trim().toLowerCase();
+    if(!value) return
     if (requestTimeout) clearTimeout(requestTimeout);
     requestTimeout = setTimeout(() => {(fetchCountries(value)).then(response => response.json())
         .then(json => {
             if(json.length > 10) {console.log('too much'); alertText.style.display = 'block'}
             else 
                 if (json.length === 1) {
+
+
                     alertText.style.display = 'none'
                     const img = document.createElement('img');
                     img.setAttribute('src', json[0].flag)
@@ -51,7 +55,6 @@ input.addEventListener('input', ()=> {
             list.innerHTML = innerHtml;
         })
         .catch(err =>{list.innerHTML = ''; console.log('Smth went wrong')});},500)
-    const value = input.value.trim().toLowerCase();
     let innerHtml = '';
     countryInfo.innerHTML = '';
 });
