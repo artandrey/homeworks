@@ -1,8 +1,6 @@
 
 import {fetchCountries} from './fetchCountries.js';
 import './styles.css';
-import '../node_modules/@pnotify/core/dist/BrightTheme.css'
-import { alert, notice, info, success, error } from '@pnotify/core';
 const input = document.querySelector('.search-field');
 const list = document.querySelector('.countries-list');
 const countryInfo = document.querySelector('.country-info');
